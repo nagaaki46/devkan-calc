@@ -12,7 +12,7 @@ public class Calculator {
 
     @GET
     @Path("add")
-    public String add(@QueryParam("a")int a, @QueryParam("b")int b){
+    public String add(@QueryParam("a")long a, @QueryParam("b")long b){
         return Integer.toString(a + b);
     }
 }
